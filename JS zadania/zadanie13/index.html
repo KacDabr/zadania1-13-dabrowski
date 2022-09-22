@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>zadanie 13</title>
+    </head>
+    <body>
+        <div style="color:navy;font-size:70px;">
+            <script language="JavaScript">
+                var a_dab=prompt("podaj liczbe 1=","");
+                var b_dab=prompt("podaj liczbe 2=","");
+                var a=parseFloat(a_dab);
+                var b=parseFloat(b_dab);
+                var w_dab;
+                var x1_dab;
+                var x2_dab;
+                var x3_dab;
+                var x4_dab;
+            x1_dab=a*a*a;
+            x2_dab=3*((a)*(a))*(b);
+            x3_dab=3*(a)*((b)*(b));
+            x4_dab=b*b*b;
+        w_dab=x1_dab+x2_dab+x3_dab+x4_dab;
+                document.write("A="+a+" B="+b+"<br>"+a+"^3+3*(("+a+")^2)*("+b+")+3*("+a+")*(("+b+")^2)+"+b+"^3 = "+x1_dab+" + "+x2_dab+" + "+x3_dab+" + "+x4_dab+" = "+w_dab+"<br>");
+            </script>
+        </div>
+        <script type="text/javascript">
+            function okno_zamknij_dabrowski()
+            {
+            window.close()
+            }
+            </script>
+                <input type="button" value="zamknij okno" onclick="okno_zamknij_dabrowski()"/>
+    </body>
+</html>
