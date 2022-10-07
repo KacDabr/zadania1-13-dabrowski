@@ -1,0 +1,68 @@
+<textarea cols="1000" rows="1000">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div style="color: #FFEDDF; font-weight: bolder;">
+    <script>
+        var a_dab;
+        var b_dab=prompt("Podaj b = ","");
+        var c_dab=prompt("Podaj c = ","");
+        var a=parseFloat(a_dab);
+        var b=parseFloat(b_dab);
+        var c=parseFloat(c_dab);
+        var obw_dab;
+        var pol_dab;
+        var h1_dab;
+        var h2_dab;
+        var h3_dab;
+        var sin_dab;
+        var cos_dab;
+        var tg_dab;
+        var ctg_dab;
+        var akat_dab;
+        var bkat_dab;
+
+        document.write("<h1>Trojkat</h1>");
+
+        document.write("<hr height=20px>");
+        a = Math.sqrt(Math.pow(c, 2) - Math.pow(b, 2));
+        document.write("Bok a jest rowny = " + a + " <br>");
+        document.write("Bok b jest rowny = " + b + " <br>");
+        document.write("Bok c jest rowny = " + c + " <br>");
+
+        document.write("<hr height=20px>");
+        obw_dab = a + b + c;
+        document.write("Obwod trojkata abc jest rowny = " + obw_dab + " <br>");
+        pol_dab = (a * b) / 2;
+        document.write("Pole trojkata abc jest rowne = " + pol_dab + " <br>");
+        document.write("<hr height=20px>");
+
+        h1_dab = a;
+        h2_dab = b;
+        h3_dab = (a * b) / c;
+        document.write("h1 = " + h1_dab + "<br>h2 = " + h2_dab + "<br>h3 = " + h3_dab.toFixed(3)+ "<br>");
+        document.write("<hr height=20px>");
+
+        sin_dab = a/c;
+        cos_dab = b/c;
+        tg_dab = a/b;
+        ctg_dab = b/a;
+        document.write("sin alfa = " + sin_dab.toFixed(3)+ " <br>cos alfa = " + cos_dab.toFixed(3)+ " <br>tg alfa = " + tg_dab.toFixed(3)+ "<br>ctg alfa = " + ctg_dab.toFixed(3)+" <br>");
+        document.write("<hr height=20px>");
+
+        akat_dab = Math.asin(a/c)*180/Math.PI;
+        bkat_dab = 90-akat_dab;
+        document.write("kat alfa = " + akat_dab.toFixed(3)+ "<br> kat beta = " + bkat_dab.toFixed(3)+ "<br> kat gama = " + 90 + "<br>");
+        document.write("<hr height=20px>");
+    </script>
+    </div>
+</head>
+<body bgcolor="#0D1321">
+    
+</body>
+</html>
+</textarea>
